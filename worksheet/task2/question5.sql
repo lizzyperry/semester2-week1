@@ -11,4 +11,3 @@ LEFT JOIN Course ON Enrolment.CourseId = Course.CourseId
 WHERE Enrolment.Grade >=40
 GROUP BY Student.StudentId, Student.FirstName, Student.LastName
 
---SUM(CASE WHEN Enrolment.Grade >= 40 THEN Course.Credits ELSE 0 END) AS TotalCreditsPassed
