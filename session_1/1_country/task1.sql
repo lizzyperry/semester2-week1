@@ -12,4 +12,6 @@
 
 -- write your sql code here
 
+
 SELECT * from countries;
+SELECT Country FROM countries WHERE Continent='Asia' LIMIT 10;

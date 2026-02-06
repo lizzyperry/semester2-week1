@@ -7,3 +7,7 @@
 -- 2. Load this script: .read tasks.sql
 -- 3. Exit SQLite: .exit
 
+
+SELECT Continent, SUM(Population)
+FROM
+countries GROUP BY Continent;
