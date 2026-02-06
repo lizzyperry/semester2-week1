@@ -8,5 +8,5 @@ SELECT Student.StudentId, Student.FirstName, Student.LastName,SUM(Course.Credits
 FROM Student
 LEFT JOIN Enrolment ON Student.StudentId = Enrolment.StudentId AND Enrolment.Grade >= 40
 LEFT JOIN Course ON Enrolment.CourseId = Course.CourseId
-WHERE Enrolment.Grade >=40 AND TotalCreditsPassed
+WHERE Enrolment.Grade >=40
 GROUP BY Student.StudentId, Student.FirstName, Student.LastName
